@@ -1,39 +1,26 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 const ImageCard = ({ place }) => {
-    const { image,title,description } = place;
-    const [t,setTitle] = useState('')
-    const [data,setData] = useState('')
-   const handleCard = ()=>{
-        setTitle(title)
-        setData(description)
-      
-      }
+    const { image, title, id } = place;
 
-  
+
+
     return (
 
-        <div className="grid grid-cols-3">
 
-       
-        <div>
-      <h2 className="text-5xl">{t}</h2>
-    </div>
-        
 
-        <div onClick={handleCard} className="text-white">
+
+        <Link to={`destination/${id}`} className="text-white">
 
             <div>
-
                 <img className=" w-[800px] h-[300px] object-cover rounded-lg" src={image} alt="" />
-              
-
+                <h2 className="text-xl">{title}</h2>
             </div>
 
 
-        </div>
-        </div>
+        </Link>
+
 
     );
 };
