@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Cox's Bazar",
+        "location": "Chittagong Division, Bangladesh",
+        "description": "Cox's Bazar is a famous tourist destination known for its long natural sea beach, one of the longest in the world.",
+        "image": "https://i.ibb.co/CzQRgHP/Rectangle1.png"
+    },
+    {
+        "id": 2,
+        "title": "Sundarbans",
+        "location": "Khulna Division, Bangladesh",
+        "description": "The Sundarbans is the largest mangrove forest in the world and is home to the Bengal tiger. It spans across India and Bangladesh.",
+        "image": "https://i.ibb.co/jZtGftd/Sreemongol.png"
+    },
+    {
+        "id": 3,
+        "title": "Sreemangal",
+        "location": "Sylhet Division, Bangladesh",
+        "description": "Sreemangal is known as the 'Tea Capital of Bangladesh' and is famous for its lush tea gardens and the Lawachara National Park.",
+        "image": "https://i.ibb.co/jZtGftd/Sreemongol.png"
+    }
+]

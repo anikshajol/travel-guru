@@ -1,4 +1,14 @@
+import { NavLink } from "react-router-dom"
+
 const Header = () => {
+
+  const navLinks = <>
+    <li className=""><NavLink >News</NavLink></li>
+    <li><NavLink>Destination</NavLink></li>
+    <li><NavLink>Blog</NavLink></li>
+    <li><NavLink>Contact</NavLink></li>
+  </>
+
   return (
     <div>
       <div className="navbar text-white">
@@ -22,50 +32,19 @@ const Header = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu gap-2 menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              {navLinks}
             </ul>
           </div>
           <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li tabIndex={0}>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+          <ul className=" gap-4 menu-horizontal px-1">
+            {
+              navLinks
+            }
+
           </ul>
         </div>
         <div className="navbar-end">
